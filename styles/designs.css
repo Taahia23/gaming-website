@@ -7,9 +7,17 @@
 
 
 
-.text-pink-style{
+.text-pink-style {
     color: #FF42A5;
 }
+
+.text-light-grey {
+    color: #534C64;
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
 /* shared styles ends */
 
 
@@ -27,10 +35,11 @@ nav {
     width: 30%;
 }
 
-.logo-game img{
+.logo-game img {
     width: 80px;
     height: 40px;
 }
+
 .menu {
     display: flex;
     justify-content: space-evenly;
@@ -46,7 +55,7 @@ nav {
     display: flex;
     /* justify-content: space-around; */
     display: inline-block;
-    padding: 30px 60px;
+    padding: 30px 20px;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -68,4 +77,159 @@ nav {
     margin-top: 20px;
     margin-right: 50px;
     padding: 15px 10px;
+}
+
+/* banner styles starts */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF3F0;
+}
+
+.banner-content {
+    padding-left: 150px;
+    padding-top: 130px;
+    width: 40%;
+
+}
+
+.banner-img-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.banner-img-container img {
+    padding-left: 40px;
+    width: 80%;
+}
+
+.banner-title {
+    color: #0B0223;
+    text-align: left;
+    font-family: Work Sans;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-goat {
+    text-align: left;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.division {
+    width: 60%;
+    justify-content: space-between;
+
+}
+
+.div {
+    margin-bottom: 24px;
+    display: flex;
+    text-align: left;
+}
+
+.div i {
+    margin-right: 10px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.btn-sign {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 13px 30px;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.btn-go {
+    margin-left: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    background-color: #4EC5F7;
+    ;
+}
+
+/* banner styles ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* for mobile devices */
+@media screen and (max-width:576px) {
+
+    nav,
+    .menu,
+    .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+
+    .menu ul {
+        margin-top: -40px;
+    }
+
+    .menu ul li {
+        padding: 20px 0;
+
+    }
+
+    .logo-game {
+        padding: 30px;
+    }
+
+    .follow {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 70px;
+    }
+
+    /* banner section responsive */
+    .banner {
+        flex-direction: column-reverse;
+        background-color: #fff;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+    .btn-go{
+        margin-left: 0;
+    }
+    .banner-img-container{
+        margin-top: 30px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
 }
