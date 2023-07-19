@@ -5,7 +5,19 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.section-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
 
+.text-gradient {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .text-pink-style {
     color: #FF42A5;
@@ -167,6 +179,45 @@ nav {
 }
 
 /* banner styles ends */
+/* online-games section starts */
+.online-game .section-title {
+    margin: 130px 0px 10px 0px;
+}
+
+.online-game .text-light-grey {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.online-game-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.online-game-img-container img {
+    width: 300px;
+    height: 380px;
+}
+.online-game-caption{
+    margin-top: 20px;
+    text-align-last: left;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 70px;
+   margin-left: 140px;
+}
+.online-game-caption .vip-text{
+    margin-left: 60px;
+}
+.online-game-caption  .text-light-grey{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+/* online-games section ends */
 
 
 
@@ -224,10 +275,12 @@ nav {
         padding-left: 100px;
         padding-top: 100px;
     }
-    .btn-go{
+
+    .btn-go {
         margin-left: 0;
     }
-    .banner-img-container{
+
+    .banner-img-container {
         margin-top: 30px;
         width: 100%;
         flex-direction: column-reverse;
